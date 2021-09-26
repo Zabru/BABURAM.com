@@ -1,7 +1,8 @@
 const planets = document.querySelectorAll('.planet')
 const p_radii = [22,33,50,70,112,138,165,190]
 let p_radians = new Array(8).fill(0)
-const p_velocities = [1.607, 1.174,1,0.802, 0.434, 0.323, 0.228, 0.182]
+const p_velocities = [0.1607, 0.1174,0.1,0.0802, 0.0434, 0.0323, 0.0228, 0.0182]
+
 
 const moon = document.querySelector('#moon')
 const m_radius = 8

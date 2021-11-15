@@ -52,19 +52,148 @@ header{
 }
 
 
- .contact{
-      
-     
+
+
+
+.planet{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-.contact:hover{
-
-  z-index: 1;
-   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-  transform: scale(1.05);
-  cursor: pointer;
-
+.planet .container{
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 700px;
+    margin-top: 50px;
 }
+.planetEarth{
+    position: relative;
+    min-width: 50%;
+    height: 10vh;
+    justify-content: center;
+    
+    
+}
+
+
+
+.planetEarth .loader {
+
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border: radius 50%;
+    animation: animation 4s linear infinite;
+}
+
+@keyframes  animation
+{
+0%
+{
+    transform: rotate(0deg);
+}
+100%
+{
+    transform: rotate(360deg);
+}
+}
+.planetEarth .loader:before 
+{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 100%;
+background: linear-gradient(to top,transparent,rgba(0,255,249,0.4));
+background-size: 200px 360px;
+background-repeat: no-repeat;
+border-top-left-radius: 200px;
+border-bottom-left-radius: 200px;
+}
+
+.planetEarth .loader:after 
+{
+content: '';
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%);
+width: 10px;
+height: 10px;
+background: #00fff9;
+border-radius: 50%;
+z-index: 10;
+box-shadow:0 0 10px #00fff9,
+           0 0 20px #00fff9,
+           0 0 30px #00fff9,
+           0 0 40px #00fff9,
+           0 0 50px #00fff9,
+           0 0 60px #00fff9,
+           0 0 70px #00fff9,
+           0 0 80px #00fff9,
+           0 0 90px #00fff9,
+           0 0 100px #00fff9 ;
+           }
+           .planetEarth .loader span{
+
+            position: absolute;
+            top: 10px;
+            left: 10px;
+             right:10px ;
+             bottom :10px;
+             background: #182357;
+             border-radius: 50%;
+           }
+           .earth{
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            background: url(earth.jpg);
+            border-radius: 50%;
+            background-size: cover;
+           
+        box-shadow: inset 0 0 20px #03a9f4,
+                          0 0 20px #03a9f4;  
+    animation: animateearth 20s linear infinite;
+    }
+
+
+
+
+
+
+
+.earth{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: url(card/earthh.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: inset 0 0 20px #03a9f4,
+                        0 0 120px #03a9f4;
+    animation: animateEarth 20s linear infinite;
+}
+@keyframes animateEarth{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 360%;
+
+
+    }
+}
+
+
+
+
+
 
 
 
@@ -73,7 +202,7 @@ header{
 
 header #menu-icon   .fa-bars {
     color: rgb(255, 255, 255);
-    font-size: larger;
+    font-size: medium;
     font-weight: 900;
     padding: 20px;
     background-color: rgb(255, 255, 255, 0.05);
@@ -208,7 +337,7 @@ color: #03a9f4;
 animation: animate 4s ease-in-out infinite;
 }
 
-@keyframes animate {
+@keyframes  animate {
 
     0%,100%{
 
@@ -408,7 +537,7 @@ ul li:nth-chil(4)hover{
 
 
 body{
-  padding: 40px;
+  
   background-color: #c13b17; 
   
 
@@ -422,7 +551,7 @@ body{
   font-family: cursive;  
   font-size: 28px;
   color: rgba(255,255,255,.70);
-  padding: 6px;
+  
   text-transform: uppercase;
     font-family: consolas;
    
@@ -591,136 +720,7 @@ margin-left:407px;}
 
 
 
-.planet{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
 
-.planet .container{
-    width: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.planetEarth{
-    position: relative;
-    min-width: 50%;
-    height: 10vh;
-    justify-content: center;
-    margin-top: 200px;
-    margin-left: 224px;
-    
-}
-
-
-
-.planetEarth .loader {
-
-    position: relative;
-    width: 160px;
-    height: 160px;
-    border: radius 50%;
-    animation: animation 4s linear infinite;
-}
-
-@keyframes  animation
-{
-0%
-{
-    transform: rotate(0deg);
-}
-100%
-{
-    transform: rotate(360deg);
-}
-}
-.planetEarth .loader:before 
-{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 50%;
-height: 100%;
-background: linear-gradient(to top,transparent,rgba(0,255,249,0.4));
-background-size: 200px 360px;
-background-repeat: no-repeat;
-border-top-left-radius: 200px;
-border-bottom-left-radius: 200px;
-}
-
-.planetEarth .loader:after 
-{
-content: '';
-position: absolute;
-top: 0;
-left: 50%;
-transform: translate(-50%);
-width: 10px;
-height: 10px;
-background: #00fff9;
-border-radius: 50%;
-z-index: 10;
-box-shadow:0 0 10px #00fff9,
-           0 0 20px #00fff9,
-           0 0 30px #00fff9,
-           0 0 40px #00fff9,
-           0 0 50px #00fff9,
-           0 0 60px #00fff9,
-           0 0 70px #00fff9,
-           0 0 80px #00fff9,
-           0 0 90px #00fff9,
-           0 0 100px #00fff9 ;
-           }
-           .planetEarth .loader span{
-
-            position: absolute;
-            top: 10px;
-            left: 10px;
-             right:10px ;
-             bottom :10px;
-             background: #182357;
-             border-radius: 50%;
-           }
-           .earth{
-            position: absolute;
-            width: 340px;
-            height: 340px;
-            background: url(earth.jpg);
-            border-radius: 50%;
-            background-size: cover;
-           
-        box-shadow: inset 0 0 20px #03a9f4,
-                          0 0 20px #03a9f4;  
-    animation: animateearth 20s linear infinite;
-    }
-
-
-
-
-.earth{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    background: url(card/earthh.jpg);
-    border-radius: 50%;
-    background-size: cover;
-    box-shadow: inset 0 0 20px #03a9f4,
-                        0 0 120px #03a9f4;
-    animation: animateEarth 20s linear infinite;
-}
-@keyframes animateEarth{
-    0%{
-        background-position: 0;
-    }
-    100%{
-        background-position: 360%;
-
-
-    }
-}
 
 
 

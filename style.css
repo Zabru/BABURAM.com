@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
-
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
@@ -271,7 +270,7 @@ nav#sidebar .profile .text h2{
 
 position: absolute;
 
-transform: translate(-50%, -50%);
+transform: translate(-50%, -80%);
 font-size: 50px;
 margin-left: 285px;
 
@@ -337,7 +336,8 @@ nav#sidebar li a .fas{
 
 ul{
   display: flex;
-  
+  align-items: center;
+  justify-content: center;
    padding: 10px;
    
    

@@ -20,6 +20,7 @@ width:350px;
   overflow:hidden;
   width:350px;
   margin:0 auto;
+  transition: 0.5s;
   background:#333;
   padding:20px;
   box-sizing:border-box;
@@ -39,9 +40,17 @@ width:350px;
   transition:0.5s;
   
 }
-
+.testimotionals .key::after {
+  background-image: url("Contents/Keyboard/img/keyboardimage.png");
+}
+.testimotionals .solar::after {
+  background-image: url("Contents/solar system/img/solarimage.jpg");
+}
+.testimotionals .Special::after {
+  background-image: url("My-Web-Page/cover.jpeg");
+}
 .testimotionals .card .content {
-  z-index:2; 
+  z-index:1; 
   position:relative;
   cursor: pointer;
 }
@@ -56,19 +65,18 @@ width:350px;
   color:#fff;
   
 }
-.testimotionals .card .content .image {
+.testimotionals .card .content .image img {
+  position: absolute;
   width:350px; 
   height:170px;
- 
- 
-  overflow:hidden;
+  z-index: 4;
    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
   
 }
 
-.testimotionals .card .conte nt .details h2 {
-font-size:18px;
-color:white;
+.testimotionals .card .content .details h2 {
+font-size:28px;
+color:rgb(255, 0, 0);
 }
 .testimotionals .card .content .details h2 span {
 font-size:18px;
@@ -103,7 +111,7 @@ body{
 }
 
 .card::after{
-content: '';
+    content: '';
     position: absolute;
     inset: 4px;
     background: #0e1538;

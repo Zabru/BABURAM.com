@@ -139,40 +139,31 @@ box-shadow:0 0 10px #00fff9,
            0 0 90px #00fff9,
            0 0 100px #00fff9 ;
            }
-           .planetEarth .loader span{
-
-            position: absolute;
-            top: 10px;
-            left: 10px;
-             right:10px ;
-             bottom :10px;
-             background: #182357;
-             border-radius: 50%;
-           }
-           .earth{
-            position: absolute;
-            width: 340px;
-            height: 340px;
-            background: url(earth.jpg);
-            border-radius: 50%;
-            background-size: cover;
-           
-        box-shadow: inset 0 0 20px #03a9f4,
+.planetEarth .loader span{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right:10px ;
+  bottom :10px;
+  background: #182357;
+  border-radius: 50%;
+}
+.earth{
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background: url("My-Web-Page/earthh.jpg");
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: inset 0 0 20px #03a9f4,
                           0 0 20px #03a9f4;  
-    animation: animateearth 20s linear infinite;
-    }
-
-
-
-
-
-
-
+  animation: animateearth 20s linear infinite;
+}
 .earth{
     position: absolute;
     width: 110px;
     height: 110px;
-    background: url(card/earthh.jpg);
+    background: url("My-Web-Page/earthh.jpg");
     border-radius: 50%;
     background-size: cover;
     box-shadow: inset 0 0 20px #03a9f4,
@@ -189,17 +180,6 @@ box-shadow:0 0 10px #00fff9,
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 header #menu-icon   .fa-bars {
     color: rgb(255, 255, 255);
     font-size: medium;
@@ -220,22 +200,6 @@ header .fa-times{
     cursor: pointer;
     transform: translate(280px, -10px);
 }
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
 nav#sidebar{
     position: fixed;
     left: -30%;
@@ -303,13 +267,6 @@ nav#sidebar .profile .text h2{
 
 
 }
-
-
-
-
-
-
-
 .bigtext h2{
 
 position: absolute;
@@ -357,15 +314,6 @@ animation: animate 4s ease-in-out infinite;
 
     }
 }
-
-
-
-
-
-
-
-
-
 nav#sidebar li{
     list-style: none;
     display: flex;
@@ -386,33 +334,6 @@ nav#sidebar li a{
 nav#sidebar li a .fas{
     margin: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ul{
   display: flex;
@@ -521,21 +442,6 @@ ul li:nth-chil(4)hover{
 } */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body{
   
   background-color: #c13b17; 
@@ -558,18 +464,6 @@ body{
    }
 
 
-
-  
-
-
-
-
-
-
-
-
-
-
 /* Animation */
 p {
   animation: animated-text 4s linear 1s 1 normal both,
@@ -590,34 +484,28 @@ p {
   to{border-right-color: transparent;}
 }
 
-
-
-
-
-
-
-body{background:black;
+body{
+  background:black;
 margin-top:150px;
 padding: 3px;
 margin-left:407px;}
 
 #typing {
 
-            width: 0ch;
-            color: white;
-            float: left;
-            font-family: sans-serif;
-            font-weight:bold;
-            font-size: 60px;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 5s steps(22) 1s infinite alternate;
+  width: 0ch;
+  color: white;
+  float: left;
+  font-family: sans-serif;
+  font-weight:bold;
+  font-size: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(22) 1s infinite alternate;
         }
-        #typing span{
-        color:red;}
-
-        #crow {
-            float: left;
+      #typing span{
+      color:red;}
+      #crow {
+          float: left;
 
       color: white;
             font-family: consolas;
@@ -641,20 +529,6 @@ margin-left:407px;}
                 opacity: 1;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #arrow{
@@ -702,40 +576,6 @@ margin-left:407px;}
     color: white;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .night{
   position: absolute;/* position: relative; */
   width: 50%;

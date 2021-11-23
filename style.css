@@ -42,7 +42,7 @@
 
 #preloader{
      background: #000
-    url("loader.gif") no-repeat: center;
+    url("My-Web-Page/loader.gif") no-repeat: center;
     position: fixed;
     width: 100%;
     height: 100vh;

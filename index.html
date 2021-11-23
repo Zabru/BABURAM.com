@@ -52,7 +52,7 @@
 
 
 <body  class="bodyimage" div style="background-image: url('card/mount.jpg');">
-
+ <div id="preloader"></div>
 <header>
 
 
@@ -176,8 +176,14 @@
 
 
 
-   </body> 
 
+
+<script >
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load" , function (){
+        loader.style.display = 'none' ; 
+    })
+</script>
 
 
 
@@ -204,5 +210,5 @@
 
 
 
-
+   </body>
 </html>
